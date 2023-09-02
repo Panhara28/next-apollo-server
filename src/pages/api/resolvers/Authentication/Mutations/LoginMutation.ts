@@ -2,6 +2,7 @@ import ContextType from "@/pages/api/context/ContextType";
 import { GraphQLError } from "graphql";
 import bcrypt from "bcrypt";
 import { sign } from "jsonwebtoken";
+import { serialize } from "cookie";
 
 export interface LoginParams {
   username: string;
