@@ -4,7 +4,7 @@ export default function CreateKnexContext() {
   return {
     default: knex({
       client: "mysql2",
-      connection: process.env.NEXT_PUBLIC_MYSQL_DEFAULT,
+      connection: process.env.MYSQL_DEFAULT,
       pool: { min: 3, max: 10 },
     }),
   };

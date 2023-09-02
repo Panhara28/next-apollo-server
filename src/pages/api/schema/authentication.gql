@@ -1,0 +1,4 @@
+type Mutation {
+  userLogin(username: String!, password: String!): String
+  register(username: String!, password: String!): Boolean
+}
